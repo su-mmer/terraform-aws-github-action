@@ -40,7 +40,7 @@ variable "placeholder" {
 variable "environment" {
   default = "dev"
   description = "Define infrastucture's environment"
-  type = "string"
+  type = string
   
   validation {
     condition = contains(["dev", "qa", "prod"], var.environment)
